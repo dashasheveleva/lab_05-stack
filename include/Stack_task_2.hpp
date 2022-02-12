@@ -31,6 +31,9 @@ class Stack_2 {
   void push(T&& value);
   const T& head() const;
   T pop();
+
+  size_t stack_size() const ;
+
 };
 
 template <typename T>
@@ -79,6 +82,17 @@ T Stack_2<T>::pop() {
   Stack_2<T>::head_node = Stack_2<T>::head_node->prev;
   delete current_node;
   return value;
+}
+
+template <typename T>
+size_t Stack_2<T>::stack_size() const {
+  size_t stack_size = 0;
+  Node2<T>* current_node = head_node;
+  while (current_node != nullptr) {
+    stack_size++;
+    current_node = current_node->prev;
+  }
+  return stack_size;
 }
 
 

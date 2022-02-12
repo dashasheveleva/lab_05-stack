@@ -4,7 +4,7 @@
 #define INCLUDE_STACK_TASK_1_HPP_
 
 #include <iostream>
-#include <string>
+#include <type_traits>
 #include <utility>
 
 template <typename T>
