@@ -32,8 +32,7 @@ class Stack_2 {
   const T& head() const;
   T pop();
 
-  size_t stack_size() const ;
-
+  size_t stack_size() const;
 };
 
 template <typename T>

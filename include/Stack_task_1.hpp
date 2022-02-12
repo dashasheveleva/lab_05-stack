@@ -31,7 +31,6 @@ class Stack_1 {
   const T& head() const; //
 
   size_t stack_size() const;
-
 };
 
 template <typename T>
